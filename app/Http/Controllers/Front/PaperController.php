@@ -69,7 +69,7 @@ class PaperController extends Controller
                 'fraction' => $fraction,
             ];
             Fraction::create($fraction_data);
-            return redirect()->route('show.tip')->with('tip', '提交成功！');
+            return redirect()->route('show.tip')->with('tip', '你的成绩为'.$fraction);
         }catch(Exception $e){
             return redirect()->back()->with('tip', '网络异常,请重新提交！');
         }

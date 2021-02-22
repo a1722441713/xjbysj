@@ -15,7 +15,7 @@
         <script>
             setInterval(function(){
                 $('.alert').remove();
-            },10000);
+            },20000);
         </script>
     @endif
 </body>
